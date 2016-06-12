@@ -31,11 +31,7 @@
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.myweb.**.dao" />
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
+        <property name="annotationClass" value="com.myweb.base.annotation.Repository" />
     </bean>
     
-    <bean id="user2" class="com.myweb.User">
-    	<property name="id" value="${jdbc.initialSize}" />
-    	<property name="name" value="${jdbc.driverClassName}" />
-    </bean>
-	
 </beans>

@@ -1,7 +1,9 @@
 package com.myweb.user.dao;
 
+import com.myweb.base.annotation.Repository;
 import com.myweb.user.entity.User;
 
+@Repository
 public interface UserDao {
 	
 	public User getUser(int userId);
